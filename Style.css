@@ -1,1 +1,57 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 10px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    background: #333;
+    color: #fff;
+}
+
+/* Add some hover effects to headers for better interaction */
+h1, h2 {
+    transition: color 0.3s ease;
+}
+
+h1:hover, h2:hover {
+    color: #007BFF;
+}
