@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +6,17 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Lighter grey background for the whole page */
+    color: #333; /* Dark grey text color for better readability */
     line-height: 1.6;
-    margin: 10px;
+    padding: 20px;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 20px 10px;
+    background-color: #007bff; /* Light blue background for the header */
+    color: white; /* White text in the header */
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -22,36 +24,43 @@ header h1 {
     margin: 0;
 }
 
-header p {
-    margin: 5px 0;
-}
-
 section {
+    background-color: white; /* White background for sections */
     margin: 20px 0;
     padding: 20px;
-    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners for the sections */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
 h2 {
-    color: #333;
+    color: #007bff; /* Light blue color for all H2 headers */
 }
 
 ul {
-    margin: 20px;
+    padding: 20px;
+    list-style-type: none; /* Removes bullet points */
+}
+
+ul li {
+    background-color: #e7f1ff; /* Very light blue background for list items */
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 4px; /* Rounded corners for list items */
 }
 
 footer {
     text-align: center;
-    padding: 20px 10px;
-    background: #333;
-    color: #fff;
+    padding: 10px 0;
+    background-color: #007bff; /* Light blue background for the footer */
+    color: white; /* White text in the footer */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-/* Add some hover effects to headers for better interaction */
-h1, h2 {
-    transition: color 0.3s ease;
-}
-
-h1:hover, h2:hover {
-    color: #007BFF;
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    body, section {
+        padding: 10px;
+    }
 }
