@@ -11,7 +11,7 @@ body{
     width: 10px;
 }
 ::-webkit-scrollbar-thumb{
-    background: #f0fff;
+    background: #F0FFFF;
 }
 
 nav{
@@ -26,7 +26,7 @@ nav{
     height: 90vh;
     display: flex;
     align-items: center;
-    background: #ffc107;
+    background: #F0FFFF;
     overflow: hidden;
     position: relative;
     box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
