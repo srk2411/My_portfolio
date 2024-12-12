@@ -1,385 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Sri Ram Karthik Bhagavatula</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Sri Ram Karthik Bhagavatula</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Sri Ram Karthik Bhagavatula profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Sri Ram Karthik Bhagavatula</h1>
-        <p class="section__text__p2">ADAS Test Engineer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>6 Months <br /> ADAS Testing Intern</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Tech. Bachelors Degree<br />M.S Masters of Sciences</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hello! I'm Sri Ram Karthik Bhagavatula, an Electrical Engineer with a strong passion for Advanced Driver Assistance Systems (ADAS) 
-              and cutting-edge technologies. With expertise in testing and integrating automotive systems like Adaptive Cruise Control, 
-              Lane Keep Assist, and Blind Spot Monitoring, I aim to enhance safety and efficiency in the automotive world.
 
-              I hold a Master’s in Electrical Engineering from Western Michigan University and have hands-on experience in embedded systems, robotics, 
-              and renewable energy solutions. My technical skills include MATLAB/Simulink, C/C++, and working with sensors like Radar, Lidar, and Cameras.
-              I thrive on solving challenges, optimizing systems, and contributing to innovative projects.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Easyfolio</title>
 
-Currently, I am refining ADAS features as an intern, ensuring their seamless functionality and real-world applicability. Through my academic and professional journey, I remain committed to learning, evolving, and driving impactful advancements in engineering and technology.
-            </p>
-          </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-warning navbar-dark">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-capitalize">
+                    <li class="nav-item">
+                        <a class="nav-link" id="home" href="#">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="project" href="#project-window">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about" href="#about-window">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact" href="#contact-window">contact us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+    </nav>
+
+    <header class="container-fluid text-capitalize text-white landing-page" id="home-window">
+        <div class="container">
+            <span class="first"></span>
+            <span class="second"></span>
+        </div>
+        <h2 class="display-3 font-weight-bold header">
+            <span class="display-4">hello !!</span>
+            <br> my name is kunaal<br>
+            <a href="#contact-window" style="font-size: 15px" class="text-center text-white">want to hire</a>
+        </h2>
+
+            
+        <!-- <h5>i am web developer</h5> -->
+    </header>
+
+    <section class="container p-4 project-section mb-6" id="project-window">
+        <p class="display-4 text-center text-warning bold mt-6 mb-6">Projects</h3>
+        <div class="row pt-4">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <h2 class="text-warning mt-4">Project Name..</h6>
+                    <br>
+                    <p class="text-justify margined">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, error tempore corrupti possimus
+                        veritatis vero minima ex cum consequuntur obcaecati veniam nam cumque pariatur voluptates molestiae
+                        est, maxime harum voluptatem.possimus veritatis vero minima ex cum consequuntur obcaecati veniam
+                        nam cumque pariatur voluptates molestiae est, maxime harum voluptatem.</p>
+                    <a class="btn btn-outline-warning text-warning mb-4" type="button">Read more</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="project-img tilt-card" data-tilt>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="project-img tilt-card" data-tilt>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <h2 class="text-warning mt-4">Project Name..</h6>
+                    <br>
+                    <p class="text-justify margined">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, error tempore corrupti possimus
+                        veritatis vero minima ex cum consequuntur obcaecati veniam nam cumque pariatur voluptates molestiae
+                        est, maxime harum voluptatem.possimus veritatis vero minima ex cum consequuntur obcaecati veniam
+                        nam cumque pariatur voluptates molestiae est, maxime harum voluptatem.</p>
+                    <a class="btn btn-outline-warning text-warning" type="button">Read more</a>
+            </div>
+        </div>
+        <hr>
+        <div class="row pt-4">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <h2 class="text-warning mt-4">Project Name..</h6>
+                    <br>
+                    <p class="text-justify margined">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, error tempore corrupti possimus
+                        veritatis vero minima ex cum consequuntur obcaecati veniam nam cumque pariatur voluptates molestiae
+                        est, maxime harum voluptatem.possimus veritatis vero minima ex cum consequuntur obcaecati veniam
+                        nam cumque pariatur voluptates molestiae est, maxime harum voluptatem.</p>
+                    <a class="btn btn-outline-warning text-warning mb-4" type="button">Read more</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="project-img tilt-card" data-tilt>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="project-img tilt-card" data-tilt>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <h2 class="text-warning mt-4">Project Name..</h6>
+                    <br>
+                    <p class="text-justify margined">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, error tempore corrupti possimus
+                        veritatis vero minima ex cum consequuntur obcaecati veniam nam cumque pariatur voluptates molestiae
+                        est, maxime harum voluptatem.possimus veritatis vero minima ex cum consequuntur obcaecati veniam
+                        nam cumque pariatur voluptates molestiae est, maxime harum voluptatem.</p>
+                    <a class="btn btn-outline-warning text-warning" type="button">Read more</a>
+            </div>
+        </div>
+        <hr>
     </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+
+    <section class="container p-4 mb-6" id="about-window">
+        <h3 class="display-4 text-center text-warning bold mt-6 mb-6">About us</h3>
+        <div class="row about-container">
+            <div class="col-lg-6 col-md-6col-sm-12 col-12">
+                <div class="about-img">
+                    <img src="" alt="">
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 about-content">
+                <h2>Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia alias iste, labore impedit tempora dolorum,
+                    necessitatibus unde nostrum, velit atque non. Qui fugit eligendi recusandae officia modi! Voluptatibus,
+                    tempora necessitatibus!dolor sit amet consectetur adipisicing elit. Officia alias iste, labore impedit
+                    tempora dolorum, necessitatibus unde nostrum, velit atque non. Qui fugit eligendi recusandae officia
+                    modi! Voluptatibus, tempora necessitatibus!dolor sit amet consectetur adipisicing elit. Officia alias
+                    iste, labore impedit tempora dolorum, necessitatibus unde nostrum, velit atque non. Qui fugit eligendi
+                    recusandae officia modi! Voluptatibus, tempora necessitatibus!dolor sit amet consectetur adipisicing
+                    elit. Officia alias iste, labore impedit tempora dolorum, necessitatibus unde nostrum, velit atque non.
+                    Qui fugit eligendi recusandae officia modi! Voluptatibus, tempora necessitatibus!</p>
+                <a class="btn btn-outline-warning text-warning" type="button">Read more</a>
             </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+        <div class="container">
+            <div class="progress mt-4 mb-4">
+                <div class="progress-bar bg-warning" style="width: 98%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML 98%</div>
+            </div>
+            <div class="progress mt-4 mb-4">
+                <div class="progress-bar bg-warning" style="width: 95%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS 95%</div>
+            </div>
+            <div class="progress mt-4 mb-4">
+                <div class="progress-bar bg-warning" style="width: 85%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JavaScript 85%</div>
+            </div>
+            <div class="progress mt-4 mb-4">
+                <div class="progress-bar bg-warning" style="width: 85%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">React 85%</div>
+            </div>
+            <div class="progress mt-4 mb-4">
+                <div class="progress-bar bg-warning" style="width: 90%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Bootstrap 90%</div>
+            </div>
+            <div class="progress mt-4 mb-4">
+                <div class="progress-bar bg-warning" style="width: 95%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">wordpress</div>
+            </div>
+        </div>
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+
+    <section class="container contact" id="contact-window">
+        <div class="jumbotron text-center text-capitalize text-white bg-warning">
+            <h2 class="display-4">Contact Us</h2>
+            <hr>
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+                    <p>email to this</p>
+                    <p class="text-lowercase">example@domain.com</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-12 col-12">
+                    <h2 class="mt-3">OR</h2>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+                    <p>call to hire us</p>
+                    <p class="text-lowercase">+00 000</p>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:srkbhagavatula@gmail.com">srkbhagavatula@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Sri Ram Karthik Bhagavatula. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="tilt.jquery.js"></script>
+
+    <script src="index.js"></script>
+
+</body>
+
 </html>
