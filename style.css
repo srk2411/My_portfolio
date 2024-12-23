@@ -29,7 +29,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('srk_image.png');
+    background-image: url('adas_hero.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -67,7 +67,7 @@ nav a:hover {
 
 .about-section .image-container img {
     border-radius: 10px;
-    max-width: 250px;
+    max-width: 300px;
     width: 100%;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
