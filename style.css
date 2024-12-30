@@ -57,26 +57,53 @@ nav a:hover {
     gap: 40px;
 }
 
+/* About Section */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: left;
+    position: relative;
+}
+
 .about-section h2 {
-    font-size: 2.5rem;
-    color: #00bcd4;
-    margin-bottom: 20px;
+    font-size: 72px;
+    color: rgba(255, 255, 255, 0.6);
     text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.about-section .content {
+    display: flex;
+    align-items: center;
+    max-width: 900px; /* Aligning max-width */
     width: 100%;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto; /* Ensures consistent centering */
+}
+
+.about-section .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .about-section .image-container img {
+    max-width: 100%;
     border-radius: 10px;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .about-section .text-container {
-    max-width: 600px;
-    line-height: 1.6;
-    color: #ddd;
+    flex: 1;
+    padding-left: 40px;
+}
+
+.about-section .text-container p {
+    margin-bottom: 20px;
+}
 }
 
 /* Skills Section */
